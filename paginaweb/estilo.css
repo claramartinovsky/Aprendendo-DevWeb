@@ -1,0 +1,151 @@
+body{
+    background: #ffffff;
+}
+
+.imagem{
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 98vh;
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F4F7;
+}
+
+.logo{
+    width: 150px;
+}
+
+.login {
+    float: right;
+    margin-right: 15%;
+    margin-top: 10%;
+    width: 22%;
+}
+
+.faca{
+    font-family: 'Poppins';
+    font-size: x-large;
+    font-weight: 600;
+    color: #9d4961;
+    opacity: 0.76;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    color: #262626;
+}
+h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: medium;
+    margin-bottom: 2%;
+}
+
+
+.email{
+    padding-left: 15%;
+    background-image:url(/imagens/email.png);
+    background-size: 6%;
+    background-position: 2%;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: #D9D9D9;
+    width: 85%;
+    height: 40px;
+    font-family: 'Poppins';
+}
+
+.senha{
+    padding-left: 15%;
+    background-image:url(/imagens/cadeado.png),url(/imagens/olho.png);;
+    background-position: 2%, 98%;
+    background-size: 6%;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: #D9D9D9;
+    width: 85%;
+    height: 40px;
+    font-family: 'Poppins';
+}
+
+input[type="checkbox"]{
+    background-image:url(/imagens/check.png);
+}
+input[type="checkbox"]:checked{
+    accent-color:  #9d4961;
+}
+.lembreme{
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.esqueci{
+    font-family: 'Poppins';
+    float: right;
+    color: #9d4961;
+    font-size: small;
+    font-weight: 600;
+}
+
+button{
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #9d4961;
+    border-color: #9d4961;
+    border-style: solid;
+    color: #F3F4F7;
+    width: 100%;
+    height: 50px;
+}
+
+.baixo{
+    font-family: 'Poppins';
+    font-size: small;
+    margin-top: 5%;
+    text-align: center;
+    color: #9d4961;
+}
+
+.registro{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        display:block;
+        background-image: none;
+    }
+
+    .faca{
+        color: #262626;
+        opacity: 1;
+    }
+
+    .login{
+       width: 80vw;  
+       margin: 2em;
+    }
+
+    .imagem{
+        display: none;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
